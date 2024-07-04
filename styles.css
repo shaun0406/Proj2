@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none!important;
+}
+
+body {
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  /*background-image: linear-gradient(to right bottom, #cffafe, #22d3ee);
+  
+  background-color: rgb(172,120,186);*/
+  background-color: #A47DAB;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-img {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
+}
+
+.container {
+  flex: 1;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.h1-text {
+    white-space: nowrap;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 10%; /* adjust the top value to position the h1 above image-1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    font-family: 'Affectionately Yours';
+    src: url('fonts/AffectionatelyYours-Regular.ttf'); /* adjust the file name and path as needed *//* add z-index to ensure h1 is above image-1 */
+    font-size: 150px;
+    color: #90D5FF;
+  }
+  
+  .image-1 {
+    position: absolute;
+    top: 40%; /* adjust the top value to position image-1 below h1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    height: 400px;
+    max-width: 1200px;
+    width: 400px;
+    object-fit: cover; /* add z-index to ensure image-1 is below h1 */
+  }
+.image-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.image-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  } 
+
+  .h2-text{
+    white-space: nowrap;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 10%; /* adjust the top value to position the h1 above image-1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    font-family: 'Affectionately Yours';
+    src: url('fonts/AffectionatelyYours-Regular.ttf'); /* adjust the file name and path as needed *//* add z-index to ensure h1 is above image-1 */
+    font-size: 150px;
+    color: #90D5FF;
+  }
+.h3-text {
+    white-space: nowrap;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 20%; /* adjust the top value to position the h1 above image-1 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    font-family: 'Affectionately Yours';
+    src: url('fonts/AffectionatelyYours-Regular.ttf'); /* adjust the file name and path as needed *//* add z-index to ensure h1 is above image-1 */
+    font-size: 150px;
+    color: #90D5FF;
+  }
+
+
+
+.btn {
+  position: absolute;
+  top: calc(100% - 25rem);
+  min-width: 150px;
+  height: 100px;
+  width: 200px;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: none;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e2e8f0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes {
+  left: 50%;
+  transform: translateX(calc(-100% - 1rem));
+  z-index: 1;
+}
+
+.btn-no {
+  left: calc(50% + 1rem);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.btn-maybe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  position: absolute;
+  top: 101%;
+  left: 117%;
+  height: 10px;
+  width: 116px;
+  padding: 0.75rem 1rem;
+  font-size: 0.60rem;
+  outline: none;
+  border: none;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  transition: all 0.5s ease;
+  z-index: 2;
+}

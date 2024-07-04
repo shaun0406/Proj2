@@ -1,0 +1,79 @@
+.sentence-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .sentence {
+    font-size: 36px;
+    font-weight: bold;
+    transition: opacity 0.5s;
+  }
+  
+  .sentence.out {
+    opacity: 0;
+  }
+  
+  .sentence.in {
+    opacity: 1;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #A47DAB;
+    color: #fff;
+    font-family: Calibri, sans-serif;
+  }
+  
+  .center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .intial-words {
+    width: 70%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+  }
+  
+  .char {
+    white-space: pre;
+    font-family: 'Affectionately Yours';
+    src: url('fonts/AffectionatelyYours-Regular.ttf'); /* adjust the file name and path as needed *//* add z-index to ensure h1 is above image-1 */
+    font-size: 150px;
+    animation: an 2.5s forwards;
+    color: #90D5FF;
+    cursor: default;
+  }
+  
+  @keyframes an {
+    from {
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+    }
+  }
+
+  #continue{
+    margin-bottom: -15%;
+    white-space: pre;
+    text-align: center;
+    font-family: 'Affectionately Yours';
+    src: url('fonts/AffectionatelyYours-Regular.ttf'); /* adjust the file name and path as needed *//* add z-index to ensure h1 is above image-1 */
+    font-size: 50px;
+    color: #90D5FF;
+    cursor: default;
+    opacity: 0.3;
+  }
